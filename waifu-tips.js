@@ -241,11 +241,11 @@ function loadWidget(config) {
 			let index = (++modelId >= modelList.models.length) ? 0 : modelId;
 			loadModel(index, 0, modelList.messages[index]);
 		} else {
-			fetch(`${apiPath}switch/?id=${modelId}`)
-				.then(response => response.json())
-				.then(result => {
-					loadModel(result.model.id, 0, result.model.message);
-				});
+		//	fetch(`${apiPath}switch/?id=${modelId}`)
+		//		.then(response => response.json())
+		//		.then(result => {
+		//			loadModel(result.model.id, 0, result.model.message);
+		//		});
 		}
 	}
 }
